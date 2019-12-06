@@ -5,12 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Mini Golf</title>
+    <title>Plat'n'Putt'</title>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <script src="http://cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    
+    <script type="text/javascript" src="preload.js"></script>
+    <script type="text/javascript" src="mainmenu.js"></script>
     <script type="text/javascript" src="main.js"></script>
+    
+    
 </head>
 <body>
+    <div class="container">
     
+        <div class="row">
+          <div>
+            <h1>Welcome to Plat'n'Putt</h1>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="gamebox">
+            <div id="game"></div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div>
+            <h2 class="control-guide">Control Guide</h2>
+          </div>
+        </div>
+
+        <div class="row">
+            <h3>Spacebar:  Shoot ball in direction of Pointer</h3>
+        </div>
+
+        <div class="arrow">
+            <h3>L / R Arrow Keys: Rotate Pointer</h3>
+        </div>
+    </div>
 </body>
 </html>

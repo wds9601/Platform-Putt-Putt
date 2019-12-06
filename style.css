@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    font-family: 'Damion', cursive;
+    background-color: #32944c;
+    color: #D7FBE8;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 35px;
+}
