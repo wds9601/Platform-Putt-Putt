@@ -17,7 +17,7 @@ game.prototype = {
         ground.body.immovable = true
     
         //create ledges 
-        ledge = platforms.create(10, 450, 'tile57')
+        ledge = platforms.create(10, 250, 'tile57')
         ledge.body.immovable = true
     
         ledge = platforms.create(200, 500, 'tile57' )
@@ -25,15 +25,18 @@ game.prototype = {
     
         ledge = platforms.create(400, 550, 'tile57')
         ledge.body.immovable = true
+
+        // ledge = platforms.create()
+        // ledge.body.immovable = true
     
         //create flag and place on top ledge
-        flag = this.game.add.sprite(30, 380, 'flag')
+        flag = this.game.add.sprite(30, 180, 'flag')
         this.game.physics.arcade.enable(flag)
         flag.enableBody = true
     
     
         //create player and add physics, gravity, and bounce
-        player = this.game.add.sprite(300, this.game.world.height - 200, 'player_1')
+        player = this.game.add.sprite(80, this.game.world.height - 200, 'player_1')
         this.game.physics.arcade.enable(player)
         player.scale.setTo(0.8, 0.8)
         player.body.bounce.set(0.5)
@@ -108,6 +111,7 @@ game.prototype = {
         function gameOver() {
             music.pause()
             player.kill()
+            hole.play()
             cheer.play()
             
             swal ({
@@ -117,12 +121,9 @@ game.prototype = {
             })
             .then ((value) => {
                 if (value) {
-                    // this.game.state.restart()
+                    // this.game.state.restart() <-- was throwing an error so i had to use window refresh instead :(
                     window.location.reload()
                 }
-                // else {
-                //     this.game.state.restart()
-                // }
             })
         }
 
@@ -131,14 +132,7 @@ game.prototype = {
             if (player.body.velocity.x === 0 && Math.floor(player.body.velocity.y) === -3) {
             gameOver()
             }
-        }
-            
+        }  
     }
     
 }
-
-
-
-
-
-
