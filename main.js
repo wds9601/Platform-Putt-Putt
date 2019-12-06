@@ -26,8 +26,12 @@ game.prototype = {
         ledge = platforms.create(400, 550, 'tile57')
         ledge.body.immovable = true
 
-        // ledge = platforms.create()
-        // ledge.body.immovable = true
+        ledge = platforms.create(300, 300, 'tile57')
+        ledge.body.immovable = true
+
+        let wall = platforms.create(135, 150, 'tile57')
+        wall.scale.setTo(0.5, 3)
+        wall.body.immovable = true
     
         //create flag and place on top ledge
         flag = this.game.add.sprite(30, 180, 'flag')
