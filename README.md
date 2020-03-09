@@ -1,7 +1,7 @@
 ## Plat'n'Putt
 https://wds9601.github.io/Platform-Putt-Putt/
-Platformer-style Miniature Golf Game
-Plat’n’Putt A 2D platformer-style game heavily influenced by miniature golf – what’s not to like! 
+* Platformer-style Miniature Golf Game
+* Plat’n’Putt A 2D platformer-style game heavily influenced by miniature golf – what’s not to like! 
     
 ## Technologies used
 * HTML/CSS
@@ -35,11 +35,10 @@ Plat’n’Putt A 2D platformer-style game heavily influenced by miniature golf 
         - Spent a few hours getting my SweetAlert pop-ups to reset the game state.
         - Added difficulty to the game field by adding more obstacles
         - Deployed on Github Pages
+		
 ## If I had another week...
-    - Display "Hole in One" and "Birdie" notifications
-    - Add a "Power Shot" by holding down the spacebar
-    - Create several more levels, or "holes" to through
-    - Create logic for turn-based 2-Player option
-    - Add collectible items to the game field (e.g. power-ups, coins)
-Collapse
-
+- Display "Hole in One" and "Birdie" notifications
+- Add a "Power Shot" by holding down the spacebar
+- Create several more levels, or "holes" to through
+- Create logic for turn-based 2-Player option
+- Add collectible items to the game field (e.g. power-ups, coins)
